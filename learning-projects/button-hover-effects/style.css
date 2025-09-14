@@ -1,0 +1,95 @@
+body{background-color: #ccd5ae;
+width:100%;
+
+}
+h1{
+font-family:Delius Swash Caps;
+text-align: center;
+font-size:100px;
+margin:30px;
+ position:relative;
+top:25%; 
+}
+
+.buttons{
+
+background-color:#ffc8dd;
+width:13%;
+margin: calc(19%/12);
+margin-top:25%;
+font-size: 1rem;
+padding: 1em;
+border:0px;
+border-radius:30px;
+
+
+
+}
+.default{
+    border-radius:0px;
+}    
+
+  
+.glow{ 
+
+font-family:Delius Swash Caps;
+font-size:1rem;
+transition: border-radius 2s ;
+ 
+    
+
+}
+.glow:hover{
+box-shadow: 1px 1px 10px 10px white;
+ border-radius:25% 10%;
+
+
+}
+.raised{ 
+box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+.raised:hover{
+box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
+
+
+}
+.raised:active{
+box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+;
+}
+.outline{
+    border:2px dotted black ;
+    background-color:transparent;
+    color:#ffffff;
+    font-family: delius swash caps;
+    transition: background-color 3s  ;
+
+}
+.outline:hover{
+    background-color:#ffc8dd;
+    color:black;
+   
+}
+.zoom{
+    font-weight:900;
+    transition: transform 0.5s; 
+
+}
+.zoom:hover
+{
+ transform:scale(1.2);
+}
+.gradient{background:linear-gradient(0.25turn, #cdb4db,#ffc8dd, #ffafcc, #bde0fe, #a2d2ff);
+transition:background-position 0.5s ease-in-out;
+background-size:400px 400px;
+
+
+}
+
+.gradient:hover
+{background:linear-gradient(0.25turn, #cdb4db,#ffc8dd, #ffafcc, #bde0fe, #a2d2ff);
+background-size:400px 400px;
+color:#ffffff;
+background-position: right center;
+}
+
