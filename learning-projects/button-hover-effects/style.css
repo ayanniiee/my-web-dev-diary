@@ -6,16 +6,15 @@ h1{
 font-family:Delius Swash Caps;
 text-align: center;
 font-size:100px;
-margin:30px;
- position:relative;
+margin:30px; position:relative;
 top:25%; 
 }
 
 .buttons{
 
 background-color:#ffc8dd;
-width:13%;
-margin: calc(19%/12);
+width:calc((100% - 12%)/ 6 - 2em);
+margin: 0 1%;
 margin-top:25%;
 font-size: 1rem;
 padding: 1em;
@@ -34,7 +33,7 @@ border-radius:30px;
 
 font-family:Delius Swash Caps;
 font-size:1rem;
-transition: border-radius 2s ;
+transition: box-shadow .3s ease, border-radius 2s ease ;
  
     
 
@@ -47,6 +46,8 @@ box-shadow: 1px 1px 10px 10px white;
 }
 .raised{ 
 box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+transition: box-shadow .3s ease;
+
 }
 .raised:hover{
 box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
@@ -55,6 +56,7 @@ box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
 }
 .raised:active{
 box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+
 ;
 }
 .outline{
@@ -62,7 +64,7 @@ box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
     background-color:transparent;
     color:#ffffff;
     font-family: delius swash caps;
-    transition: background-color 3s  ;
+    transition: background-color .3s, color .3s ease  ;
 
 }
 .outline:hover{
@@ -72,7 +74,7 @@ box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
 }
 .zoom{
     font-weight:900;
-    transition: transform 0.5s; 
+    transition: transform 0.5s ease; 
 
 }
 .zoom:hover
@@ -80,7 +82,7 @@ box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
  transform:scale(1.2);
 }
 .gradient{background:linear-gradient(0.25turn, #cdb4db,#ffc8dd, #ffafcc, #bde0fe, #a2d2ff);
-transition:background-position 0.5s ease-in-out;
+transition:background-position 0.8s ease-in-out, color 0.3s ease;
 background-size:400px 400px;
 
 
