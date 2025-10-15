@@ -1,0 +1,437 @@
+:root {
+    /*colours*/
+    --color-bg: #fff;
+    --color-cards: #fff;
+    --color-text: grey;
+    --color-heading-bg: #c2d2b8ff;
+
+    --cherry-blossom-pink: #f4b1b8ff;
+    --orchid-pink: #eabac2ff;
+    --seashell: #f3e8e4ff;
+    --lavender-blush: #fbf0f4ff;
+    --ash-gray: #c2d2b8ff;
+    /*type*/
+    --font-body: ;
+    --font-h1: ;
+    --size-0: 1rem;
+    --aize-1: 2rem;
+    -size-3: 1.5rem;
+}
+
+/* -------------------------------------- */
+/* 🌐 1. RESET + GLOBAL SETTINGS          */
+/* -------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--color-text, #333);
+    background-color: rgba(255, 192, 203, 0.432);
+    font-family: fira code;
+    line-height: 1.6;
+
+
+}
+
+/* -------------------------------------- */
+/* 🎨 2. BASE STYLES                      */
+/* -------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+
+    line-height: 1.2;
+    margin-bottom: 0.5em
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    font-family: "crimson-pro", serif;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+
+}
+
+img {
+
+    width: 250px;
+    height: auto;
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.btn {
+    background-color: var(--color-heading-bg);
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .2s ease;
+}
+
+.btn:hover {
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* -------------------------------------- */
+/* 📦 3. LAYOUT CONTAINERS                */
+/* -------------------------------------- */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+
+}
+
+/* -------------------------------------- */
+/* 🔝 4. HEADER + NAVIGATION              */
+/* -------------------------------------- */
+
+
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+
+
+
+}
+
+
+.site-header ul {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0.5em 0.75em;
+    list-style: none;
+    font-size: 1.1rem;
+
+
+
+}
+
+.site-header h1 a {
+    margin-right: auto;
+    color: var(--color-text, #333);
+}
+
+.site-header h1 a:hover {
+    color: color: var(--color-text, #333);
+    background
+}
+
+/* -------------------------------------- */
+/* 🙋🏻 5. HERO / ABOUT SECTION           */
+/* -------------------------------------- */
+.about-me .container {
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* Section Layout */
+.about-me {
+    padding-block: 1rem;
+
+
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 960px;
+    height: 200px;
+    
+
+
+}
+
+.about-text h2 {
+    color: #000;
+
+}
+
+
+.hero-img {
+    width: 250px;
+
+}
+
+/* -------------------------------------- */
+/* 🙋🏻 6. skills section       */
+/* -------------------------------------- */
+
+.container .skills {
+    padding-block: 0.5rem;
+    border-radius: 2rem;
+    background-color: var(--orchid-pink);
+    box-shadow: 0px 0px 10px #ccc8c8;
+}
+
+.skills-container,
+.learning-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+
+
+    border-radius:
+}
+
+
+.skills h2 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+
+.skills-list,
+.learning-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+
+.skills-list li,
+.learning-list li {
+
+    background-color: #f3e8e4ff;
+    padding: 0.25em 0.75em;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    line-height: 2;
+    box-shadow: 0px 1px 5px 0.5px #865a5a;
+}
+
+.skills-list li:nth-of-type(2n),
+.learning-list li:nth-of-type(2n) {
+    background-color: var(--color-heading-bg);
+}
+
+.skills-list li:nth-of-type(2n+1),
+.learning-list li:nth-of-type(2n+1) {
+    background-color: var(--cherry-blossom-pink);
+}
+
+/* -------------------------------------- */
+/* 🙋🏻 7.Projects / work   */
+/* -------------------------------------- */
+.projects {
+    padding-block: 2rem;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+    padding-left: 30px;
+}
+
+.project-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+
+
+
+
+
+}
+
+.project-card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.5rem;
+    min-height: 420px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    
+
+}
+
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+
+}
+
+.project-card header h3 {
+    margin: 1rem 0 0.5rem;
+      color: gray;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+.project-desc {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin: 1rem 0;
+
+
+
+
+}
+
+.project-card .small {
+    align-self: start
+}
+
+.small {
+    font-weight: bold;
+}
+
+/* -------------------------------------- */
+/* 🙋🏻 8.footer
+/* -------------------------------------- */
+
+.site-footer {
+    max-width: 960px;
+    background-color: var(--cherry-blossom-pink);
+    margin: 0 auto;
+    text-align: center;
+
+
+
+
+}
+
+
+.footer-links.container a {
+
+
+    padding: 0.25em 0.75em;
+    font-size: 1rem;
+
+
+
+}
+
+/* -------------------------------------- */
+/* 🙋🏻 9.media
+/* -------------------------------------- */
+
+@media(max-width:833px) {
+    
+    .site-header .container {
+    flex-direction: column;
+
+
+
+
+}
+
+
+.about-content {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+   height:auto;
+   text-align: center;
+  }
+    .img-heroo {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+    
+
+    margin:0 auto;
+    background-color: #333;
+ }
+
+  .hero-img {
+    max-width: 220px;
+  }
+
+  .skills-container, .learning-container{
+flex-direction: column;
+
+  }
+    
+    
+    .project-grid {
+        
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .project-card{
+        flex-direction: column-reverse;
+        
+        align-items: center;
+    }
+
+    .project-img {
+    width: 50%;
+   
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+
+}
+.small {
+    font-weight: bold;
+    margin:0 auto;
+    order:-2;
+}
+.project-desc{
+    order:-1;
+}
+
+.footer-links.container a {
+
+
+   display: flex;
+   justify-content: center;
+
+
+
+
+}
